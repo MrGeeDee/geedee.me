@@ -7,5 +7,7 @@ div {
   height: 100%;
   margin-bottom: 1em;
   background: url(fire_1f525.png); 
+  line-height: 64px;
+  text-align: center;
 }
 
