@@ -9,5 +9,6 @@ div {
   background: url(fire_1f525.png); 
   line-height: 64px;
   text-align: center;
+  vertical-align: auto;
 }
 
