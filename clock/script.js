@@ -26,24 +26,18 @@ function getTime() {
 	hours = (hours < 10 ? `0${hours}` : hours).toString().split('');
 	minutes = (minutes < 10 ? `0${minutes}` : minutes).toString().split('');
 	seconds = (seconds < 10 ? `0${seconds}` : seconds).toString().split('');
-	
-	// set hour
+
 	displayNumber(hoursEls[0], +hours[0])
 	displayNumber(hoursEls[1], +hours[1])
-	
-	// set minutes
+
 	displayNumber(minutesEls[0], +minutes[0])
 	displayNumber(minutesEls[1], +minutes[1])
-	
-	// set seconds
 	displayNumber(secondsEls[0], +seconds[0])
 	displayNumber(secondsEls[1], +seconds[1])
 }
 
 function displayNumber(el, number) {
 	const pieces = el.querySelectorAll('.piece');
-	
-	// show/hide pieces depending on the states array
 	pieces.forEach((piece, idx) => {
 		if(states[+number].includes(idx + 1)) {
 			piece.classList.add('show');
