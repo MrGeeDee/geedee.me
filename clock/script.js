@@ -1,5 +1,5 @@
 window.addEventListener("resize", resize);
-
+import gsap from "gsap";
 var scene;
 var camera;
 var renderer;
